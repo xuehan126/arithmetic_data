@@ -1,0 +1,5 @@
+def chain(iterables):
+    for it in iterables:
+        for x in it:
+            yield x
+print([x for x in chain(("abc", "def"))])
